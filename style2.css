@@ -1,0 +1,50 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 2fr 2fr ,5fr;
+    Height: 670px;
+    grid-auto-rows: 20% 30% 5% 10% auto;
+    grid-gap: 15px;
+    justify-items: center;
+    align-items: center;
+    place-items: center;
+    place-items: center;
+    grid-template-areas: 
+    "header header links"
+    "Main Main Main"
+    "search search search"
+    "lucky lucky lucky"
+    "footer footer footer";
+
+  }
+  
+  .grid-item-1 {
+    grid-area: header;
+    justify-content: center;
+  }
+  .grid-item-2 {
+    grid-area: links;
+    
+  }  
+  .grid-item-3 {
+    grid-area: Main;
+  }
+  .grid-item-4 {
+    grid-area: search;
+    
+  }
+  .grid-item-5 {
+    grid-area: lucky;
+  }
+  .grid-item-6 {
+    align-self: start;
+    justify-self: center;
+  }
+  .my-input {
+    border-top-left-radius: 5px !important;
+    border-bottom-left-radius: 5px !important;
+    border-top-right-radius: 5px !important;
+    border-bottom-right-radius: 5px !important;
+    width:500px;
+    border:2px solid gray;
+    height: 20px;
+  }
